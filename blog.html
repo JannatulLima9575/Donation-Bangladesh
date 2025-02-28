@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-10/12 mx-auto">
+  <!-- Navbar and buttons sticky start -->
+  <div class="sticky top-0 bg-gray-100 md:px-10 lg:px-20 w-11/12 md:w-10/12 mx-auto">
+    <!-- Navbar section start -->
+    <div class=" navbar bg-[#F9F7F3]">
+      <div class="navbar-start">
+         <a class="btn btn-ghost bg-[#B4F461] text-xl font-bold" href="./index.html">Home</a>
+      </div>
+      <div class="navbar-center gap-2">
+    <img src="./assets/logo.png" alt="logo" class="hidden md:block lg:block">
+        <a class="hidden md:block lg:block font-bold text-xl">Donation Bangladesh</a>
+      </div>
+      <div class="navbar-end text-xl font-bold ">
+        <img src="./assets/coin.png" alt="coin">
+        <span class="text-xl">5500 BDT</span>
+      </div>
+    </div>
+    <!-- Navbar section end -->
+    
+     <!-- Donation and History section start -->
+      <div class=" flex justify-center space-x-2 py-8 ">
+        <button class="bg-[#B4F461] py-3 px-6 rounded-lg text-xl font-bold">Donation</button>
+        <button class="bg-gray-400 py-3 px-6 rounded-lg text-xl font-bold">History</button>
+      </div>
+     <!-- Donation and History section end --> 
+      </div>
+      <!-- Navbar and buttons sticky end -->
+
+      <!-- FAQ Section start -->
+      <div class="pt-20 px-4 md:px-10 lg:px-20 w-11/12 md:w-10/12 mx-auto space-y-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-center">Frequently Asked Questions</h2>
+    
+        <!-- Question 1 -->
+        <div class="bg-white p-4 md:p-6 shadow-md rounded-md">
+            <h3 class="font-bold text-lg md:text-xl">1. What is the Document Object Model (DOM)?</h3>
+            <p class="text-gray-600 mt-2 text-sm md:text-base">
+              The Document Object Model (DOM) is a programming interface for web documents. It represents the page as a structured tree, where elements are nodes that can be manipulated using JavaScript. Developers use the DOM to dynamically update content, styles, and attributes without reloading the entire webpage.
+            </p>
+        </div>
+    
+        <!-- Question 2 -->
+        <div class="bg-white p-4 md:p-6 shadow-md rounded-md">
+            <h3 class="font-bold text-lg md:text-xl">2. How do you select an element from the DOM?</h3>
+            <p class="text-gray-600 mt-2 text-sm md:text-base">
+              To select an element from the DOM, use methods like document.getElementById("id"), document.querySelector(".class"), or document.querySelectorAll("tag"). Example:
+              const element = document.querySelector(".my-class");
+              This allows you to manipulate the selected element’s content, styles, or attributes dynamically.
+            </p>
+        </div>
+    
+        <!-- Question 3 -->
+        <div class="bg-white p-4 md:p-6 shadow-md rounded-md">
+            <h3 class="font-bold text-lg md:text-xl">3. What is event delegation?</h3>
+            <p class="text-gray-600 mt-2 text-sm md:text-base">
+              Event delegation is a technique where a parent element handles events for its child elements using event bubbling. Instead of adding event listeners to multiple child elements, you attach one to the parent. Example:
+              parent.addEventListener("click", (event) => {
+                if (event.target.matches(".child")) console.log("Child clicked");
+              });
+            </p>
+        </div>
+        <!-- Question 4 -->
+        <div class="bg-white p-4 md:p-6 shadow-md rounded-md">
+            <h3 class="font-bold text-lg md:text-xl">4.  How do you manipulate an element's attributes and styles using the DOM?</h3>
+            <p class="text-gray-600 mt-2 text-sm md:text-base">
+              To manipulate an element’s attributes and styles using the DOM, use setAttribute() and getAttribute() for attributes, and modify element.style for inline styles. For example:
+
+              element.setAttribute("class", "new-class");  
+              element.style.color = "red";
+              You can also use classList.add() for efficient class management.
+            </p>
+        </div>
+    </div>
+      <!-- FAQ Section end -->
+
+</body>
+</html>
